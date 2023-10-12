@@ -1,0 +1,113 @@
+// <label class="catalog__radio-label" for="any">
+//   <input class="catalog__radio visually-hidden" type="radio" name="milk" id="any" checked>
+//   <span class="catalog__radio-mark"></span>
+//   <span class="catalog__radio-name">Неважно</span>
+// </label>
+// .catalog__radio-label {
+//   display: flex;
+//   align-items: center;
+//   gap: 10px;
+// }
+
+// .catalog__radio-mark {
+//   width: 24px;
+//   height: 24px;
+//   border: 2px solid #BDBDBD;
+//   border-radius: 50%;
+
+//   position: relative;
+// }
+
+// .catalog__radio:checked ~ .catalog__radio-mark {
+//   border-color: #7859CF;
+//   &::after {
+//     content: '';
+//     width: 16px;
+//     height: 16px;
+
+//     background-color: #7859CF;
+//     border-radius: 8px;
+
+//     position: absolute;
+//     top: calc(50% - 8px);
+//     left: calc(50% - 8px);
+//   }
+// }
+
+// .catalog__radio:disabled ~ .catalog__radio-name {
+//   color: #BDBDBD;
+// }
+
+// .catalog__radio:disabled ~ .catalog__radio-mark {
+//   border-color: #E2E2E2;
+// }
+
+.radio-input {
+  opacity: 0;
+  position: absolute;
+}
+
+.radio-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.radio-mark {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #BDBDBD;
+  border-radius: 50%;
+
+  position: relative;
+
+  cursor: pointer;
+}
+
+.radio-input:focus ~ .radio-mark, .radio-input:hover ~ .radio-mark{
+  border-color: #9070EC;
+  &::after {
+    content: '';
+    width: 16px;
+    height: 16px;
+
+    background-color: #7859CF;
+    border-radius: 8px;
+
+    opacity: 0.25;
+
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 8px);
+  }
+}
+
+.radio-input:checked ~ .radio-mark {
+  border-color: #7859CF;
+  &::after {
+    content: '';
+    width: 16px;
+    height: 16px;
+
+    background-color: #7859CF;
+    border-radius: 8px;
+
+    opacity: 1;
+
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 8px);
+  }
+}
+
+.radio-input:disabled ~ .radio-text {
+  color: #BDBDBD;
+}
+
+.radio-input:disabled ~ .radio-mark {
+  border-color: #E2E2E2;
+
+  &::after {
+    background-color: #E2E2E2;
+  }
+}

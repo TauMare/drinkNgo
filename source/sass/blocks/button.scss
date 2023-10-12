@@ -1,0 +1,58 @@
+.button-main {
+  cursor: pointer;
+
+  padding: 8px 20px;
+
+  font-family: "Montserrat";
+  font-size: 16px;
+  line-height: 24px;
+
+  border-radius: 4px;
+  background:#7859CF;
+  border: none;
+
+  color: $bg;
+
+  &:focus, &:hover {
+    background: #9070EC;
+  }
+
+  &:active {
+    background: #593CAC;
+  }
+
+  &:disabled {
+    background: #BDBDBD;
+  }
+}
+
+.button-additional {
+  cursor: pointer;
+
+  padding: 8px 20px;
+
+  font-family: "Montserrat";
+  font-size: 16px;
+  line-height: 24px;
+
+  border-radius: 4px;
+  background:#FFF;
+  border: none;
+
+  color: #7859CF;
+
+  &:focus, &:hover {
+    color: $bg;
+    background: #9070EC;
+  }
+
+  &:active {
+    color: $bg;
+    background: #593CAC;
+  }
+
+  &:disabled {
+    color: $bg;
+    background: #BDBDBD;
+  }
+}
