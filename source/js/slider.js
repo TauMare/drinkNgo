@@ -10,7 +10,7 @@ const state = {
     },
     step: 10,
     values: [0, 900],
-  } 
+  }
 }
 
 noUiSlider.create(slider, {

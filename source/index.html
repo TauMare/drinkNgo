@@ -159,9 +159,9 @@
             </svg>
             <div class="benefits__text-wrapper">
               <p class="benefits__name">Бодрость</p>
-              <p class="benefits__description">Сбалансированная доза кофеина<br> даст мощный заряд энергии</p> 
+              <p class="benefits__description">Сбалансированная доза кофеина<br> даст мощный заряд энергии</p>
             </div>
-            
+
           </li>
           <li class="benefits__item">
             <svg class="benefits__icon" width="52" height="56">
@@ -183,7 +183,7 @@
             <legend class="catalog__name">Цена</legend>
             <span class="visually-hidden">Выберите минимальную и максимальную цены для подбора товара.</span>
             <div class="catalog__range range"></div>
-  
+
             <div class="catalog__price-wrapper">
               <label class="visually-hidden" for="price-min">Выберите минимальную цену.</label>
               <input class="catalog__price-input catalog__price-min" type="number" placeholder="0" id="price-min" name="price-min">
@@ -191,7 +191,7 @@
               <input class="catalog__price-input catalog__price-max" type="number" value="900" id="price-max" name="price-max">
             </div>
           </fieldset>
-  
+
           <fieldset class="catalog__milk">
             <legend class="catalog__name">Наличие молока</legend>
             <ul class="catalog__radio-list">
@@ -225,7 +225,7 @@
               </li>
             </ul>
           </fieldset>
-  
+
           <fieldset class="catalog__country">
             <legend class="catalog__name">Страна произрастания</legend>
             <ul class="catalog__checkbox-list">
@@ -271,7 +271,7 @@
             <button class="catalog__reset button-additional" type="reset">Сбросить</button>
           </div>
         </form>
-  
+
         <div class="catalog__sort">
           <label class="catalog__sort-title" for="sortby">Сортировка:</label>
           <select class="catalog__sort-select" id="sortby" name="sortby">
@@ -295,7 +295,7 @@
                 <svg width="20" height="16">
                   <use href="images/icons/stack.svg#addToCart"/>
                 </svg>
-                В корзину 
+                В корзину
               </button>
             </div>
           </li>
@@ -314,7 +314,7 @@
                 <svg width="20" height="16">
                   <use href="images/icons/stack.svg#addToCart"/>
                 </svg>
-                В корзину 
+                В корзину
               </button>
             </div>
           </li>
@@ -333,7 +333,7 @@
                 <svg width="20" height="16">
                   <use href="images/icons/stack.svg#addToCart"/>
                 </svg>
-                В корзину 
+                В корзину
               </button>
             </div>
           </li>
@@ -352,7 +352,7 @@
                 <svg width="20" height="16">
                   <use href="images/icons/stack.svg#addToCart"/>
                 </svg>
-                В корзину 
+                В корзину
               </button>
             </div>
           </li>
@@ -371,7 +371,7 @@
                 <svg width="20" height="16">
                   <use href="images/icons/stack.svg#addToCart"/>
                 </svg>
-                В корзину 
+                В корзину
               </button>
             </div>
           </li>
@@ -390,15 +390,15 @@
                 <svg width="20" height="16">
                   <use href="images/icons/stack.svg#addToCart"/>
                 </svg>
-                В корзину 
+                В корзину
               </button>
             </div>
           </li>
         </ul>
-  
+
         <ul class="catalog__navigation">
           <li class="catalog__navigation-item">
-            <a href="#" class="catalog__navigation-link">
+            <a class="catalog__navigation-link" href="#">
               <svg class="catalog__navigation-icon" width="10" height="10">
                 <use href="images/icons/stack.svg#arrow-catalog"/>
               </svg>
@@ -406,16 +406,16 @@
             </a>
           </li>
           <li class="catalog__navigation-item">
-            <a href="#" class="catalog__navigation-link">1</a>
+            <a class="catalog__navigation-link" href="#">1</a>
           </li>
           <li class="catalog__navigation-item">
-            <a href="#" class="catalog__navigation-link catalog__navigation-link--current">2</a>
+            <a class="catalog__navigation-link catalog__navigation-link--current" href="#">2</a>
           </li>
           <li class="catalog__navigation-item">
-            <a href="#" class="catalog__navigation-link">3</a>
+            <a class="catalog__navigation-link" href="#">3</a>
           </li>
           <li class="catalog__navigation-item">
-            <a href="#" class="catalog__navigation-link">
+            <a class="catalog__navigation-link" href="#">
               <svg class="catalog__navigation-icon" width="10" height="10">
                 <use href="images/icons/stack.svg#arrow-catalog"/>
               </svg>
@@ -448,6 +448,7 @@
             <use class="footer__logo-medium" href="images/icons/stack.svg#logo-tablet"/>
             <use class="footer__logo-big" href="images/icons/stack.svg#logo-desktop"/>
           </svg>
+          <span class="visually-hidden">Логотип Drink2Go.</span>
         </a>
         <span class="footer__logo-text">Интернет-магазин кофейных напитков</span>
         <ul class="footer__social-links">
@@ -513,10 +514,10 @@
         <a class="footer__copy-text footer__copy-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано в HTML Academy<svg class="footer__copy-icon" width="12" height="16">
           <use href="images/icons/stack.svg#academy"/>
         </svg></a>
-          
+
       </div>
     </footer>
-    <script src="js/nouislider.js"></script>
-    <script type="module" src="js/script.js"></script>
+    <script src="js/nouislider.js" defer></script>
+    <script type="module" src="js/script.js" async></script>
   </body>
 </html>

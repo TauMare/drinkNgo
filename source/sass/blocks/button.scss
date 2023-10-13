@@ -8,7 +8,7 @@
   line-height: 24px;
 
   border-radius: 4px;
-  background:$basePrimary;
+  background: $basePrimary;
   border: none;
 
   color: $baseWhite;
@@ -44,7 +44,8 @@
 
   color: $basePrimary;
 
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     outline: none;
     border: none;
     color: $baseWhite;

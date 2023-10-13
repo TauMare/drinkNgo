@@ -14,6 +14,9 @@
 
 .noUi-target {
   position: relative;
+
+  background: $lightGrey;
+  height: 4px;
 }
 
 .noUi-base,
@@ -28,6 +31,8 @@
 .noUi-connects {
   overflow: hidden;
   z-index: 0;
+
+  border-radius: 3px;
 }
 
 .noUi-connect,
@@ -63,73 +68,7 @@
 .noUi-handle {
   backface-visibility: hidden;
   position: absolute;
-}
 
-.noUi-touch-area {
-  height: 20px;
-  width: 20px;
-}
-
-.noUi-state-tap .noUi-connect,
-.noUi-state-tap .noUi-origin {
-  transition: transform 0.3s;
-}
-
-/* Slider size and handle placement;
-*/
-.noUi-horizontal {
-  height: 18px;
-}
-
-.noUi-horizontal .noUi-handle {
-  width: 20px;
-  height: 20px;
-  right: -17px;
-  top: -8px;
-}
-
-.noUi-vertical {
-  width: 18px;
-}
-
-.noUi-vertical .noUi-handle {
-  width: 20px;
-  height: 20px;
-  right: -6px;
-  bottom: -17px;
-}
-
-.noUi-txt-dir-rtl.noUi-horizontal .noUi-handle {
-  left: -17px;
-  right: auto;
-}
-/* Styling;
-* Giving the connect element a border radius causes issues with using transform: scale
-*/
-.noUi-target {
-  background: $lightGrey;
-  height: 4px;
-}
-
-.noUi-connects {
-  border-radius: 3px;
-}
-
-.noUi-connect {
-  height: 6px;
-  background: $primaryLighter;
-}
-/* Handles and cursors;
-*/
-.noUi-draggable {
-  cursor: ew-resize;
-}
-
-.noUi-vertical .noUi-draggable {
-  cursor: ns-resize;
-}
-
-.noUi-handle {
   width: 20px;
   height: 20px;
   background-color: $baseWhite;
@@ -167,6 +106,62 @@
       opacity: 1;
     }
   }
+}
+
+.noUi-touch-area {
+  height: 20px;
+  width: 20px;
+}
+
+.noUi-state-tap .noUi-connect,
+.noUi-state-tap .noUi-origin {
+  transition: transform 0.3s;
+}
+
+/* Slider size and handle placement;
+*/
+.noUi-horizontal {
+  height: 4px;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 20px;
+  height: 20px;
+  right: -17px;
+  top: -8px;
+}
+
+.noUi-vertical {
+  width: 18px;
+}
+
+.noUi-vertical .noUi-handle {
+  width: 20px;
+  height: 20px;
+  right: -6px;
+  bottom: -17px;
+}
+
+.noUi-txt-dir-rtl.noUi-horizontal .noUi-handle {
+  left: -17px;
+  right: auto;
+}
+/* Styling;
+* Giving the connect element a border radius causes issues with using transform: scale
+*/
+
+.noUi-connect {
+  height: 6px;
+  background: $primaryLighter;
+}
+/* Handles and cursors;
+*/
+.noUi-draggable {
+  cursor: ew-resize;
+}
+
+.noUi-vertical .noUi-draggable {
+  cursor: ns-resize;
 }
 
 .noUi-active {
@@ -332,20 +327,18 @@
   margin-left: 5px;
   margin-top: 9px;
   margin-bottom: 30px;
+}
 
-  &--disabled {
-    .noUi-connect {
-      background-color: $baseGrey;
-    }
+.range--disabled .noUi-handle {
+  outline: 2px solid $baseGrey;
 
-    .noUi-handle {
-      outline: 2px solid $baseGrey;
-
-      &::after {
-        background-color: $bgGrey;
-      }
-    }
+  &::after {
+    background-color: $bgGrey;
   }
+}
+
+.range--disabled .noUi-connect {
+  background-color: $baseGrey;
 }
 
 @media (min-width: 768px) {
