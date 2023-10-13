@@ -42,16 +42,17 @@
 
 html {
   height: 100%;
+  min-width: var(--width);
 }
 
 body {
-  background-color: $bg;
+  background-color: $baseWhite;
 
   margin: 0;
 
   font-family: 'Montserrat';
   font-size: 12px;
-  color: #333333;
+  color: $baseBlack;
   font-style: normal;
   font-weight: 400;
 
@@ -67,7 +68,7 @@ img {
 
 
 .underscore {
-  // border-top: 1px solid #F0EBFF;
+  // border-top: 1px solid $baseSecondary;
   position: relative;
   &::before {
     content: '';
@@ -76,7 +77,7 @@ img {
     left: -20px;
     width: calc(100% + 40px);
     height: 1px;
-    background-color: #F0EBFF;
+    background-color: $baseSecondary;
   }
 }
 

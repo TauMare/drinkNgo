@@ -3,26 +3,29 @@
 
   padding: 8px 20px;
 
-  font-family: "Montserrat";
+  font-family: $fontMain;
   font-size: 16px;
   line-height: 24px;
 
   border-radius: 4px;
-  background:#7859CF;
+  background:$basePrimary;
   border: none;
 
-  color: $bg;
+  color: $baseWhite;
 
-  &:focus, &:hover {
-    background: #9070EC;
+  &:focus,
+  &:hover {
+    outline: none;
+    border: none;
+    background: $primaryLighter;
   }
 
   &:active {
-    background: #593CAC;
+    background: $primaryDarker;
   }
 
   &:disabled {
-    background: #BDBDBD;
+    background: $baseGrey;
   }
 }
 
@@ -31,28 +34,30 @@
 
   padding: 8px 20px;
 
-  font-family: "Montserrat";
+  font-family: $fontMain;
   font-size: 16px;
   line-height: 24px;
 
   border-radius: 4px;
-  background:#FFF;
+  background: $baseWhite;
   border: none;
 
-  color: #7859CF;
+  color: $basePrimary;
 
   &:focus, &:hover {
-    color: $bg;
-    background: #9070EC;
+    outline: none;
+    border: none;
+    color: $baseWhite;
+    background: $primaryLighter;
   }
 
   &:active {
-    color: $bg;
-    background: #593CAC;
+    color: $baseWhite;
+    background: $primaryDarker;
   }
 
   &:disabled {
-    color: $bg;
-    background: #BDBDBD;
+    color: $baseWhite;
+    background: $baseGrey;
   }
 }

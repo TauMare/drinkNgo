@@ -17,8 +17,8 @@
   width: 42px;
   height: 24px;
   border-radius: 12px;
-  background-color: #BDBDBD;
-  border: 2px solid #BDBDBD;
+  background-color: $baseGrey;
+  border: 2px solid $baseGrey;
   &::after {
     content: '';
     position: absolute;
@@ -28,7 +28,7 @@
     width: 20px;
     height: 20px;
 
-    background-color: #FFFFFF;
+    background-color: $baseWhite;
     border-radius: 50%;
 
     animation: turnLeft 0.2s ease-in; 
@@ -36,13 +36,14 @@
 }
 
 .checkbox-input:focus ~ .checkbox-mark, .checkbox-input:hover ~ .checkbox-mark {
-  border: 2px solid #7859CF;
+  outline: none;
+  border: 2px solid $basePrimary;
   background-color: #7859CF40;
 }
 
 .checkbox-input:checked ~ .checkbox-mark {
-  background-color: #7859CF;
-  border-color: #7859CF;
+  background-color: $basePrimary;
+  border-color: $basePrimary;
   &::after {
     left: calc(97% - 20px);
     animation: turnRight 0.2s ease-in; 
@@ -50,17 +51,17 @@
 }
 
 .checkbox-input:disabled ~ .checkbox-name {
-  color: #BDBDBD;
+  color: $baseGrey;
 }
 
 .checkbox-input:disabled ~ .checkbox-mark {
-  border-color: #E2E2E2;
-  background-color: #E2E2E2;
+  border-color: $lightGrey;
+  background-color: $lightGrey;
 
   cursor: not-allowed;
 
   &::after {
-    background-color: #BDBDBD;
+    background-color: $baseGrey;
   }
 }
 

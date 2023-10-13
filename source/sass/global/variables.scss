@@ -1,5 +1,20 @@
 /* здесь используйте глобальные переменные */
-$bg: hsl(0, 0%, 100%);
+$baseWhite: hsl(0, 0%, 100%);
+$baseGrey: #BDBDBD;
+$baseBlack: #333333;
+$basePrimary: #7859CF;
+$baseSecondary: #F0EBFF;
+
+$primaryLighter: #9070EC;
+$primaryDarker: #593CAC;
+$lightGrey: #E2E2E2;
+
+$bgGrey: #F8F8F8;
+$bgWhite: #F3EBE1;
+$bgLavender: #EAE6FC;
+$bgEspresso: #E5E6E8;
+
+$fontMain: "Montserrat", sans-serif;
 
 $mobile-offset: 20px;
 $desktop-offset: 40px;

@@ -31,23 +31,25 @@
   padding: 22px;
 
   &:focus, &:hover {
-    color: #7859CF;
+    outline: none;
+    border: none;
+    color: $basePrimary;
     & .header__icon {
-      fill: #7859CF;
+      fill: $basePrimary;
     }
   }
 
   &:active {
-    background-color: #F0EBFF;
-    color: #7859CF;
+    background-color: $baseSecondary;
+    color: $basePrimary;
     & .header__icon {
-      fill: #7859CF;
+      fill: $basePrimary;
     }
   }
 }
 
 .header__icon {
-  fill: #333;
+  fill: $baseBlack;
 }
 
 .header__button-text {
@@ -90,9 +92,9 @@
 .header__item {
   display: flex;
   
-  border-top: 1px solid #F0EBFF;
+  border-top: 1px solid $baseSecondary;
   &:last-child{
-    border-bottom: 1px solid #F0EBFF;
+    border-bottom: 1px solid $baseSecondary;
   }
 }
 
@@ -101,7 +103,7 @@
   width: 100%;
 
   text-decoration: none;
-  color: #333;
+  color: $baseBlack;
   text-align: center;
   font-weight: 500;
   line-height: 16px;
@@ -109,11 +111,13 @@
   text-transform: uppercase;
 
   &:active  {
-    background-color: #F0EBFF;
+    background-color: $baseSecondary;
   }
 
   &:focus, &:hover {
-    color: #7859CF;
+    outline: none;
+    border: none;
+    color: $basePrimary;
   }
 }
 
@@ -149,19 +153,21 @@
     padding: 0;
     width: auto;
     padding: 30px 20px;
-
-    &_active {
-      color: #7859CF;
-      border-bottom: 2px solid #7859CF;
+    border-bottom: 2px solid transparent;
+    &--active {
+      color: $basePrimary;
+      border-bottom: 2px solid $basePrimary;
     }
 
     &:focus, &:hover {
-      color: #7859CF;
+      outline: none;
+      border: none;
+      color: $basePrimary;
     }
 
     &:active {
-      color: #7859CF;
-      background-color: #F0EBFF;
+      color: $basePrimary;
+      background-color: $baseSecondary;
     }
   }
 
@@ -214,7 +220,7 @@
   .header__button-text {
     display: block;
     
-    font-family: "Montserrat";
+    font-family: $fontMain;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;

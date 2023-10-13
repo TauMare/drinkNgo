@@ -1,3 +1,5 @@
+const slider = document.querySelector('.slider')
+
 const imageNodes = document.querySelectorAll('.slider__image-container');
 const stepNodes = document.querySelectorAll('.slider__control');
 const controlBtns = document.querySelectorAll('.slider__button');
@@ -27,19 +29,22 @@ const state = {
 
 const render = () => {
   imageNodes.forEach((element) => {
-    element.classList.remove('slider__image-container_active');
-    element.querySelector('.slider__image').classList.remove('slider__image_active');
+    element.classList.remove('slider__image-container--active');
+    element.querySelector('.slider__image').classList.remove('slider__image--active');
   })
 
   stepNodes.forEach((element) => {
-    element.classList.remove('slider__control_active');
+    element.classList.remove('slider__control--active');
   })
+
+  slider.classList.remove('slider--lavender');
+  slider.classList.remove('slider--espresso');
 
   imageNodes.forEach((element, iterator) => {
     if (iterator === state.currentSlide) {
-      element.classList.add('slider__image-container_active');
-      element.querySelector('.slider__image').classList.add('slider__image_active');
-      stepNodes[iterator].classList.add('slider__control_active');
+      element.classList.add('slider__image-container--active');
+      element.querySelector('.slider__image').classList.add('slider__image--active');
+      stepNodes[iterator].classList.add('slider__control--active');
       nameNode.textContent = state.slides[iterator].name;
       subtextNode.innerHTML = state.slides[iterator].text;
     }
@@ -48,6 +53,7 @@ const render = () => {
   if (state.currentSlide === 1) {
     controlBtns[0].disabled = false;
     controlBtns[1].disabled = false;
+    slider.classList.add('slider--lavender');
   }
   if (state.currentSlide === 0) {
     controlBtns[0].disabled = true;
@@ -56,6 +62,7 @@ const render = () => {
   if (state.currentSlide === 2) {
     controlBtns[1].disabled = true;
     controlBtns[0].disabled = false;
+    slider.classList.add('slider--espresso');
   }
 }
 

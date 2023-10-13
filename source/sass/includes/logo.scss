@@ -4,7 +4,8 @@
   padding-bottom: 2px;
 }
 
-.header__logo-medium, .header__logo-big {
+.header__logo-medium,
+.header__logo-big {
   display: none;
 }
 
@@ -14,10 +15,11 @@
     margin-right: 67px;
   }
 
-  .header__logo-small, .header__logo-big {
+  .header__logo-small,
+  .header__logo-big {
     display: none;
   }
-  
+
   .header__logo-medium {
     display: block;
   }
@@ -29,10 +31,11 @@
 }
 
 @media (min-width: 1440px) {
-  .header__logo-medium, .header__logo-small {
+  .header__logo-medium,
+  .header__logo-small {
     display: none;
   }
-  
+
   .header__logo-big {
     display: block;
   }

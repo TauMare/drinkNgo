@@ -1,6 +1,6 @@
 .catalog {
   padding-inline: 20px;
-  background-color: #F8F8F8;
+  background-color: $bgGrey;
 
   display: flex;
   flex-direction: column;
@@ -16,7 +16,7 @@
   letter-spacing: 0.48px;
   text-transform: uppercase;
 
-  color: #7859CF;
+  color: $basePrimary;
 
   margin: 0;
   margin-bottom: 4px;
@@ -71,7 +71,7 @@
     left: calc(50% - 4px);
     width: 8px;
     height: 2px;
-    background-color: #BDBDBD;
+    background-color: $baseGrey;
   }
 }
 
@@ -96,8 +96,8 @@
   
 
   border-radius: 4px;
-  border: 2px solid #9070EC;
-  background: #FFF;
+  border: 2px solid $primaryLighter;
+  background: $baseWhite;
 
   font-family: inherit;
   text-align: center;
@@ -107,13 +107,13 @@
 
   &:focus, &:hover {
     outline: none;
-    border: 2px solid #593CAC;
+    border: 2px solid $primaryDarker;
   }
 
   &:disabled {
-    color: #BDBDBD;
-    border: 2px solid #E2E2E2;
-    background: #F8F8F8;
+    color: $baseGrey;
+    border: 2px solid $lightGrey;
+    background: $bgGrey;
   }
 }
 
@@ -189,6 +189,7 @@
     right: 7px;
    
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 1.19153L1.23899 0L5 3.61694L8.76101 0L10 1.19153L5 6L0 1.19153Z' fill='%237859CF'/%3E%3C/svg%3E");
+    background-color: $baseSecondary;
   }
 
   padding-bottom: 9px;
@@ -205,10 +206,10 @@
   border: none;
   background-color: transparent;
   border-radius: 4px;
-  color: #7859CF;
+  color: $basePrimary;
 
   text-align: right;
-  font-family: "Montserrat";
+  font-family: $fontMain;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -219,7 +220,9 @@
   padding-left: 10px;
   padding-right: 23px;
   &:focus, &:hover {
-    background-color: #F0EBFF;
+    outline: none;
+    border: none;
+    background-color: $baseSecondary
   }
 
   &:active {
@@ -245,7 +248,7 @@
   display: flex;
   flex-direction: column;
   
-  background-color: $bg;
+  background-color: $baseWhite;
 }
 
 .catalog__image {
@@ -322,82 +325,46 @@
 
 .catalog__navigation-link {
   text-decoration: none;
-  color: #7859CF;
+  color: $basePrimary;
   font-size: 16px;
   line-height: 24px;
   border-radius: 4px;
-  background-color: $bg;
+  background-color: $baseWhite;
   padding: 8px;
   min-width: 40px;
   text-align: center;
 
   &:focus, &:hover {
-    color: #FFF;
-    background-color: #9070EC;
+    outline: none;
+    border: none;
+    color: $baseWhite;
+    background-color: $primaryLighter;
     & .catalog__navigation-icon {
-      fill: #FFF;
+      fill: $baseWhite;
     }
   }
   
   &:active {
-    color: #FFF;
-    background-color: #593CAC;
+    color: $baseWhite;
+    background-color: $primaryDarker;
     & .catalog__navigation-icon {
-      fill: #FFF;
+      fill: $baseWhite;
     }
   }
 
-  &_current {
-    color: #333;
+  &--current {
+    color: $baseBlack;
     font-weight: 600;
-    background-color: #f8f8f8;
+    background-color: $bgGrey;
   }
 
-  &_disabled {
-    background-color: #E2E2E2;
+  &--disabled {
+    background-color: $lightGrey;
   }
 }
 
-// .catalog__navigation-item123 {
-//   display: flex;
-//   padding: 8px;
-//   min-width: 40px;
-//   align-items: center;
-//   justify-content: center;
-//   border-radius: 4px;
-//   background-color: $bg;
-
-//   color: #7859CF;
-//   font-size: 16px;
-//   line-height: 24px;
-
-//   &:first-child, &:last-child {
-//     padding: 15px;
-//   }
-
-//   &:last-child .catalog__navigation-icon{
-//     transform: rotateY(180deg);
-//   }
-
-//   &:focus, &:hover {
-//     color: #FFF;
-//     background-color: #9070EC;
-//     & .catalog__navigation-icon {
-//       fill: #FFF;
-//     }
-//   }
-  
-//   &:active {
-//     color: #FFF;
-//     background-color: #593CAC;
-//     & .catalog__navigation-icon {
-//       fill: #FFF;
-//     }
-//   }
-// }
-
 .catalog__navigation-icon {
-  fill: #7859CF;
+  fill: $basePrimary;
 }
 
 .catalog__navigation-text {

@@ -29,7 +29,7 @@
 }
 
 .footer__social-icon {
-  fill: #BDBDBD;
+  fill: $baseGrey;
 }
 
 .footer__social-link {
@@ -38,16 +38,18 @@
   border-radius: 4px;
 
   &:focus, &:hover {
-    background-color: #F0EBFF;
+    outline: none;
+    border: none;
+    background-color: $baseSecondary;
     & .footer__social-icon {
-      fill: #7859CF;
+      fill: $basePrimary;
     }
   }
 
   &:active {
     background-color: #7859CF40;
     & .footer__social-icon {
-      fill: #7859CF;
+      fill: $basePrimary;
     }
   }
 }
@@ -57,7 +59,7 @@
   font-weight: 700;
   line-height: 20px; /* 142.857% */
   letter-spacing: 0.28px;
-  color: #7859CF;
+  color: $basePrimary;
 
   margin: 0;
   padding-bottom: 20px;
@@ -75,8 +77,8 @@
 
 .footer__link {
   text-decoration: none;
-  color: #333;
-  font-family: "Montserrat";
+  color: $baseBlack;
+  font-family: $fontMain;
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
@@ -94,8 +96,8 @@
 }
 
 .footer__address-text {
-  color: #333;
-  font-family: "Montserrat";
+  color: $baseBlack;
+  font-family: $fontMain;
   font-size: 14px;
   font-style: normal;
   line-height: 20px;
@@ -103,8 +105,8 @@
 
 .footer__phone-text {
   text-decoration: none;
-  color: var(--base-black, #333);
-  font-family: "Montserrat";
+  color: var(--base-black, $baseBlack);
+  font-family: $fontMain;
   font-size: 14px;
   line-height: 20px;
 }
@@ -133,7 +135,7 @@
   padding-bottom: 30px;
 
   text-decoration: none;
-  color: #BDBDBD;
+  color: $baseGrey;
   font-family: Montserrat;
   font-size: 12px;
   font-style: normal;
@@ -141,15 +143,17 @@
   line-height: 16px;
 
   &:focus, &:hover {
-    color: #7859CF;
+    outline: none;
+    border: none;
+    color: $basePrimary;
     & .footer__copy-icon {
-      fill: #7859CF;
+      fill: $basePrimary;
     }
   }
   &:active {
-    color: #593CAC;
+    color: $baseSecondary;
     & .footer__copy-icon {
-      fill: #593CAC;
+      fill: $baseSecondary;
     }
   }
 }
@@ -157,7 +161,7 @@
 .footer__copy-icon {
   width: 12px;
   height: 16px;
-  fill: #BDBDBD;
+  fill: $baseGrey;
 }
 
 .footer__logo-text {
