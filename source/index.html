@@ -21,7 +21,6 @@
           кофейных напитков</span>
       </a>
       <nav class="header__navigation">
-        <!-- header__navigation_active -->
         <ul class="header__links">
           <li class="header__item"><a class="header__link header__link--active" href="#">Главная</a></li>
           <li class="header__item"><a class="header__link" href="#">Каталог</a></li>
@@ -35,7 +34,6 @@
                 <use href="images/icons/stack.svg#account"/>
               </svg>
               <span class="header__button-text">Войти</span>
-              <!-- <span class="visually-hidden">Личный кабинет.</span> -->
             </button>
           </li>
           <li class="header__menu-link">
@@ -44,7 +42,6 @@
                 <use href="images/icons/stack.svg#basket"/>
               </svg>
               <span class="header__button-text">Корзина</span>
-              <!-- <span class="visually-hidden">Корзина.</span> -->
             </button>
           </li>
           <li class="header__menu-link header__menu-burger">
@@ -62,33 +59,70 @@
       <h1 class="visually-hidden">Интернет-магазин Drink2Go.</h1>
       <section class="slider" data-test="hero">
         <h2 class="visually-hidden">Ознакомьтесь с нашими новинками.</h2>
-        <picture class="slider__image-container slider__image-container--active">
-          <source type="image/webp" media="(min-width: 1200px)" srcset="images/slider/flatwhite/desktop.webp 1x, images/slider/flatwhite/desktop2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="images/slider/flatwhite/tablet.webp 1x, images/slider/flatwhite/tablet2x.webp 2x">
-          <source type="image/webp" srcset="images/slider/flatwhite/mobile.webp 1x, images/slider/flatwhite/mobile2x.webp 2x">
+        <div class="slider__slide-wrapper">
+          <picture class="slider__image-container">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="images/slider/flatwhite/desktop.webp 1x, images/slider/flatwhite/desktop2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="images/slider/flatwhite/tablet.webp 1x, images/slider/flatwhite/tablet2x.webp 2x">
+            <source type="image/webp" srcset="images/slider/flatwhite/mobile.webp 1x, images/slider/flatwhite/mobile2x.webp 2x">
 
-          <source type="image/png" media="(min-width: 1200px)" srcset="images/slider/flatwhite/desktop.png 1x, images/slider/flatwhite/desktop2x.png 2x">
-          <source type="image/png" media="(min-width: 768px)" srcset="images/slider/flatwhite/tablet.png 1x, images/slider/flatwhite/tablet2x.png 2x">
-          <img class="slider__image slider__image_active" src="images/slider/flatwhite/mobile.png" srcset="images/slider/flatwhite/mobile2x.png 2x" width="280" height="280" alt="Баночка с кофе.">
-        </picture>
-        <picture class="slider__image-container">
-          <source type="image/webp" media="(min-width: 1200px)" srcset="images/slider/lavender/desktop.webp 1x, images/slider/lavender/desktop2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="images/slider/lavender/tablet.webp 1x, images/slider/lavender/tablet2x.webp 2x">
-          <source type="image/webp" srcset="images/slider/lavender/mobile.webp 1x, images/slider/lavender/mobile2x.webp 2x">
+            <source type="image/png" media="(min-width: 1200px)" srcset="images/slider/flatwhite/desktop.png 1x, images/slider/flatwhite/desktop2x.png 2x">
+            <source type="image/png" media="(min-width: 768px)" srcset="images/slider/flatwhite/tablet.png 1x, images/slider/flatwhite/tablet2x.png 2x">
+            <img class="slider__image" src="images/slider/flatwhite/mobile.png" srcset="images/slider/flatwhite/mobile2x.png 2x" width="280" height="280" alt="Баночка с кофе.">
+          </picture>
+          <div class="slider__text-wrapper">
+            <p class="slider__promo">Новинка!</p>
+            <p class="slider__title">Декаф Флэт Уайт</p>
+            <p class="slider__subtitle">Свежесваренный кофе без кофеина из Эфиопии <br>с натуральным фермерским молоком — то, что нужно<br> для расслабления после тяжёлого рабочего дня</p>
+            <div class="slider__prices-wrapper">
+              <p class="slider__price-before">295₽</p>
+              <p class="slider__price-actual">225₽</p>
+              <button class="slider__cta button-main" type="button">Заказать</button>
+            </div>
+          </div>
+        </div>
+        <div class="slider__slide-wrapper">
+          <picture class="slider__image-container">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="images/slider/lavender/desktop.webp 1x, images/slider/lavender/desktop2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="images/slider/lavender/tablet.webp 1x, images/slider/lavender/tablet2x.webp 2x">
+            <source type="image/webp" srcset="images/slider/lavender/mobile.webp 1x, images/slider/lavender/mobile2x.webp 2x">
 
-          <source type="image/png" media="(min-width: 1200px)" srcset="images/slider/lavender/desktop.png 1x, images/slider/lavender/desktop2x.png 2x">
-          <source type="image/png" media="(min-width: 768px)" srcset="images/slider/lavender/tablet.png 1x, images/slider/lavender/tablet2x.png 2x">
-          <img class="slider__image" src="images/slider/lavender/mobile.png" srcset="images/slider/lavender/mobile2x.png 2x" width="280" height="280" alt="Баночка с кофе.">
-        </picture>
-        <picture class="slider__image-container">
-          <source type="image/webp" media="(min-width: 1200px)" srcset="images/slider/espresso/desktop.webp 1x, images/slider/espresso/desktop2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="images/slider/espresso/tablet.webp 1x, images/slider/espresso/tablet2x.webp 2x">
-          <source type="image/webp" srcset="images/slider/espresso/mobile.webp 1x, images/slider/espresso/mobile2x.webp 2x">
+            <source type="image/png" media="(min-width: 1200px)" srcset="images/slider/lavender/desktop.png 1x, images/slider/lavender/desktop2x.png 2x">
+            <source type="image/png" media="(min-width: 768px)" srcset="images/slider/lavender/tablet.png 1x, images/slider/lavender/tablet2x.png 2x">
+            <img class="slider__image" src="images/slider/lavender/mobile.png" srcset="images/slider/lavender/mobile2x.png 2x" width="280" height="280" alt="Баночка с кофе.">
+          </picture>
+          <div class="slider__text-wrapper">
+            <p class="slider__promo">Новинка!</p>
+            <p class="slider__title">Лавандовый Латте</p>
+            <p class="slider__subtitle">Невероятное сочетание перуанской высокогорной <br> арабики с молоком ламы и лавандовым сиропом унесёт<br> вас прямо на вершину Радужных гор</p>
+            <div class="slider__prices-wrapper">
+              <p class="slider__price-before">295₽</p>
+              <p class="slider__price-actual">225₽</p>
+              <button class="slider__cta button-main" type="button">Заказать</button>
+            </div>
+          </div>
+        </div>
+        <div class="slider__slide-wrapper">
+          <picture class="slider__image-container">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="images/slider/espresso/desktop.webp 1x, images/slider/espresso/desktop2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="images/slider/espresso/tablet.webp 1x, images/slider/espresso/tablet2x.webp 2x">
+            <source type="image/webp" srcset="images/slider/espresso/mobile.webp 1x, images/slider/espresso/mobile2x.webp 2x">
 
-          <source type="image/png" media="(min-width: 1200px)" srcset="images/slider/espresso/desktop.png 1x, images/slider/espresso/desktop2x.png 2x">
-          <source type="image/png" media="(min-width: 768px)" srcset="images/slider/espresso/tablet.png 1x, images/slider/espresso/tablet2x.png 2x">
-          <img class="slider__image" src="images/slider/espresso/mobile.png" srcset="images/slider/espresso/mobile2x.png 2x" width="280" height="280" alt="Мы на карте.">
-        </picture>
+            <source type="image/png" media="(min-width: 1200px)" srcset="images/slider/espresso/desktop.png 1x, images/slider/espresso/desktop2x.png 2x">
+            <source type="image/png" media="(min-width: 768px)" srcset="images/slider/espresso/tablet.png 1x, images/slider/espresso/tablet2x.png 2x">
+            <img class="slider__image" src="images/slider/espresso/mobile.png" srcset="images/slider/espresso/mobile2x.png 2x" width="280" height="280" alt="Мы на карте.">
+          </picture>
+          <div class="slider__text-wrapper">
+            <p class="slider__promo">Новинка!</p>
+            <p class="slider__title">Тройной Эспрессо</p>
+            <p class="slider__subtitle">Мощнее укола адреналина, чернее самой тёмной ночи,<br> этот тройной эспрессо из Колумбии покажет вам, что такое<br> настоящая бодрость</p>
+            <div class="slider__prices-wrapper">
+              <p class="slider__price-before">295₽</p>
+              <p class="slider__price-actual">225₽</p>
+              <button class="slider__cta button-main" type="button">Заказать</button>
+            </div>
+          </div>
+        </div>
+
         <div class="slider__navigation">
           <button class="slider__previous-btn slider__button slider-button-prev" type="button">
             <svg class="slider__icon" width="11" height="20">
@@ -106,30 +140,21 @@
         <ul class="slider__controls-list slider-pagination">
           <li class="slider__controls-item">
             <button class="slider__control slider__control--active" type="button">
-              <span class="visually-hidden">Первый слайд.</span>
+              <span class="visually-hidden">Открыть первый слайд.</span>
             </button>
           </li>
           <li class="slider__controls-item">
             <button class="slider__control" type="button">
-              <span class="visually-hidden">Второй слайд.</span>
+              <span class="visually-hidden">Открыть второй слайд.</span>
             </button>
           </li>
           <li class="slider__controls-item">
             <button class="slider__control" type="button">
-              <span class="visually-hidden">Третий слайд.</span>
+              <span class="visually-hidden">Открыть третьй слайд.</span>
             </button>
           </li>
         </ul>
-        <div class="slider__text-wrapper">
-          <p class="slider__promo">Новинка!</p>
-          <p class="slider__title">Декаф Флэт Уайт</p>
-          <p class="slider__subtitle">Свежесваренный кофе без кофеина из Эфиопии <br>с натуральным фермерским молоком — то, что нужно<br> для расслабления после тяжёлого рабочего дня</p>
-          <div class="slider__prices-wrapper">
-            <p class="slider__price-before">295₽</p>
-            <p class="slider__price-actual">225₽</p>
-            <button class="slider__cta button-main" type="button">Заказать</button>
-          </div>
-        </div>
+
       </section>
       <section class="benefits" data-test="features">
         <h2 class="benefits__title">Преимущества</h2>
@@ -272,129 +297,131 @@
           </div>
         </form>
 
-        <div class="catalog__sort">
-          <label class="catalog__sort-title" for="sortby">Сортировка:</label>
-          <select class="catalog__sort-select" id="sortby" name="sortby">
-            <option class="catalog__sort-option" value="по умолчанию">по умолчанию</option>
-          </select>
+        <div class="catalog__items-wrapper">
+          <div class="catalog__sort">
+            <label class="catalog__sort-title" for="sortby">Сортировка:</label>
+            <select class="catalog__sort-select" id="sortby" name="sortby">
+              <option class="catalog__sort-option" value="по умолчанию">по умолчанию</option>
+            </select>
+          </div>
+
+          <ul class="catalog__items">
+            <li class="catalog__item">
+              <picture>
+                <source type="image/webp" srcset="images/catalog/1/desktop.webp 1x, images/catalog/1/desktop2x.webp 2x">
+
+                <img class="catalog__image" src="images/catalog/1/desktop.png" srcset="images/catalog/1/desktop2x.png 2x" width="130" height="188" alt="Баночка с кофе.">
+              </picture>
+              <p class="catalog__item-title">Декаф Флэт Уайт</p>
+              <p class="catalog__item-subtitle">Кофе без кофеина из Эфиопии
+                <br>с натуральным фермерским молоком</p>
+              <div class="catalog__item-wrapper">
+                <p class="catalog__item-price">225₽</p>
+                <button class="catalog__item-cta button-main" type="button">
+                  <svg width="20" height="16">
+                    <use href="images/icons/stack.svg#addToCart"/>
+                  </svg>
+                  В корзину
+                </button>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <picture>
+                <source type="image/webp" srcset="images/catalog/2/desktop.webp 1x, images/catalog/2/desktop2x.webp 2x">
+
+                <img class="catalog__image" src="images/catalog/2/desktop.png" srcset="images/catalog/2/desktop2x.png 2x" width="130" height="188" alt="Баночка с кофе.">
+              </picture>
+              <p class="catalog__item-title">Декаф Флэт Уайт</p>
+              <p class="catalog__item-subtitle">Кофе без кофеина из Эфиопии
+                <br>с натуральным фермерским молоком</p>
+              <div class="catalog__item-wrapper">
+                <p class="catalog__item-price">225₽</p>
+                <button class="catalog__item-cta button-main" type="button">
+                  <svg width="20" height="16">
+                    <use href="images/icons/stack.svg#addToCart"/>
+                  </svg>
+                  В корзину
+                </button>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <picture>
+                <source type="image/webp" srcset="images/catalog/3/desktop.webp 1x, images/catalog/3/desktop2x.webp 2x">
+
+                <img class="catalog__image" src="images/catalog/3/desktop.png" srcset="images/catalog/3/desktop2x.png 2x" width="130" height="188" alt="Баночка с кофе.">
+              </picture>
+              <p class="catalog__item-title">Декаф Флэт Уайт</p>
+              <p class="catalog__item-subtitle">Кофе без кофеина из Эфиопии
+                <br>с натуральным фермерским молоком</p>
+              <div class="catalog__item-wrapper">
+                <p class="catalog__item-price">225₽</p>
+                <button class="catalog__item-cta button-main" type="button">
+                  <svg width="20" height="16">
+                    <use href="images/icons/stack.svg#addToCart"/>
+                  </svg>
+                  В корзину
+                </button>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <picture>
+                <source type="image/webp" srcset="images/catalog/4/desktop.webp 1x, images/catalog/4/desktop2x.webp 2x">
+
+                <img class="catalog__image" src="images/catalog/4/desktop.png" srcset="images/catalog/4/desktop2x.png 2x" width="130" height="188" alt="Баночка с кофе.">
+              </picture>
+              <p class="catalog__item-title">Декаф Флэт Уайт</p>
+              <p class="catalog__item-subtitle">Кофе без кофеина из Эфиопии
+                <br>с натуральным фермерским молоком</p>
+              <div class="catalog__item-wrapper">
+                <p class="catalog__item-price">225₽</p>
+                <button class="catalog__item-cta button-main" type="button">
+                  <svg width="20" height="16">
+                    <use href="images/icons/stack.svg#addToCart"/>
+                  </svg>
+                  В корзину
+                </button>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <picture>
+                <source type="image/webp" srcset="images/catalog/5/desktop.webp 1x, images/catalog/5/desktop2x.webp 2x">
+
+                <img class="catalog__image" src="images/catalog/5/desktop.png" srcset="images/catalog/5/desktop2x.png 2x" width="130" height="188" alt="Баночка с кофе.">
+              </picture>
+              <p class="catalog__item-title">Декаф Флэт Уайт</p>
+              <p class="catalog__item-subtitle">Кофе без кофеина из Эфиопии
+                <br>с натуральным фермерским молоком</p>
+              <div class="catalog__item-wrapper">
+                <p class="catalog__item-price">225₽</p>
+                <button class="catalog__item-cta button-main" type="button">
+                  <svg width="20" height="16">
+                    <use href="images/icons/stack.svg#addToCart"/>
+                  </svg>
+                  В корзину
+                </button>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <picture>
+                <source type="image/webp" srcset="images/catalog/6/desktop.webp 1x, images/catalog/6/desktop2x.webp 2x">
+
+                <img class="catalog__image" src="images/catalog/6/desktop.png" srcset="images/catalog/6/desktop2x.png 2x" width="130" height="188" alt="Баночка с кофе.">
+              </picture>
+              <p class="catalog__item-title">Декаф Флэт Уайт</p>
+              <p class="catalog__item-subtitle">Кофе без кофеина из Эфиопии
+                <br>с натуральным фермерским молоком</p>
+              <div class="catalog__item-wrapper">
+                <p class="catalog__item-price">225₽</p>
+                <button class="catalog__item-cta button-main" type="button">
+                  <svg width="20" height="16">
+                    <use href="images/icons/stack.svg#addToCart"/>
+                  </svg>
+                  В корзину
+                </button>
+              </div>
+            </li>
+          </ul>
         </div>
-
-        <ul class="catalog__items">
-          <li class="catalog__item">
-            <picture>
-              <source type="image/webp" srcset="images/catalog/1/desktop.webp 1x, images/catalog/1/desktop2x.webp 2x">
-
-              <img class="catalog__image" src="images/catalog/1/desktop.png" srcset="images/catalog/1/desktop2x.png 2x" width="130" height="188" alt="Баночка с кофе.">
-            </picture>
-            <p class="catalog__item-title">Декаф Флэт Уайт</p>
-            <p class="catalog__item-subtitle">Кофе без кофеина из Эфиопии
-              <br>с натуральным фермерским молоком</p>
-            <div class="catalog__item-wrapper">
-              <p class="catalog__item-price">225₽</p>
-              <button class="catalog__item-cta button-main" type="button">
-                <svg width="20" height="16">
-                  <use href="images/icons/stack.svg#addToCart"/>
-                </svg>
-                В корзину
-              </button>
-            </div>
-          </li>
-          <li class="catalog__item">
-            <picture>
-              <source type="image/webp" srcset="images/catalog/2/desktop.webp 1x, images/catalog/2/desktop2x.webp 2x">
-
-              <img class="catalog__image" src="images/catalog/2/desktop.png" srcset="images/catalog/2/desktop2x.png 2x" width="130" height="188" alt="Баночка с кофе.">
-            </picture>
-            <p class="catalog__item-title">Декаф Флэт Уайт</p>
-            <p class="catalog__item-subtitle">Кофе без кофеина из Эфиопии
-              <br>с натуральным фермерским молоком</p>
-            <div class="catalog__item-wrapper">
-              <p class="catalog__item-price">225₽</p>
-              <button class="catalog__item-cta button-main" type="button">
-                <svg width="20" height="16">
-                  <use href="images/icons/stack.svg#addToCart"/>
-                </svg>
-                В корзину
-              </button>
-            </div>
-          </li>
-          <li class="catalog__item">
-            <picture>
-              <source type="image/webp" srcset="images/catalog/3/desktop.webp 1x, images/catalog/3/desktop2x.webp 2x">
-
-              <img class="catalog__image" src="images/catalog/3/desktop.png" srcset="images/catalog/3/desktop2x.png 2x" width="130" height="188" alt="Баночка с кофе.">
-            </picture>
-            <p class="catalog__item-title">Декаф Флэт Уайт</p>
-            <p class="catalog__item-subtitle">Кофе без кофеина из Эфиопии
-              <br>с натуральным фермерским молоком</p>
-            <div class="catalog__item-wrapper">
-              <p class="catalog__item-price">225₽</p>
-              <button class="catalog__item-cta button-main" type="button">
-                <svg width="20" height="16">
-                  <use href="images/icons/stack.svg#addToCart"/>
-                </svg>
-                В корзину
-              </button>
-            </div>
-          </li>
-          <li class="catalog__item">
-            <picture>
-              <source type="image/webp" srcset="images/catalog/4/desktop.webp 1x, images/catalog/4/desktop2x.webp 2x">
-
-              <img class="catalog__image" src="images/catalog/4/desktop.png" srcset="images/catalog/4/desktop2x.png 2x" width="130" height="188" alt="Баночка с кофе.">
-            </picture>
-            <p class="catalog__item-title">Декаф Флэт Уайт</p>
-            <p class="catalog__item-subtitle">Кофе без кофеина из Эфиопии
-              <br>с натуральным фермерским молоком</p>
-            <div class="catalog__item-wrapper">
-              <p class="catalog__item-price">225₽</p>
-              <button class="catalog__item-cta button-main" type="button">
-                <svg width="20" height="16">
-                  <use href="images/icons/stack.svg#addToCart"/>
-                </svg>
-                В корзину
-              </button>
-            </div>
-          </li>
-          <li class="catalog__item">
-            <picture>
-              <source type="image/webp" srcset="images/catalog/5/desktop.webp 1x, images/catalog/5/desktop2x.webp 2x">
-
-              <img class="catalog__image" src="images/catalog/5/desktop.png" srcset="images/catalog/5/desktop2x.png 2x" width="130" height="188" alt="Баночка с кофе.">
-            </picture>
-            <p class="catalog__item-title">Декаф Флэт Уайт</p>
-            <p class="catalog__item-subtitle">Кофе без кофеина из Эфиопии
-              <br>с натуральным фермерским молоком</p>
-            <div class="catalog__item-wrapper">
-              <p class="catalog__item-price">225₽</p>
-              <button class="catalog__item-cta button-main" type="button">
-                <svg width="20" height="16">
-                  <use href="images/icons/stack.svg#addToCart"/>
-                </svg>
-                В корзину
-              </button>
-            </div>
-          </li>
-          <li class="catalog__item">
-            <picture>
-              <source type="image/webp" srcset="images/catalog/6/desktop.webp 1x, images/catalog/6/desktop2x.webp 2x">
-
-              <img class="catalog__image" src="images/catalog/6/desktop.png" srcset="images/catalog/6/desktop2x.png 2x" width="130" height="188" alt="Баночка с кофе.">
-            </picture>
-            <p class="catalog__item-title">Декаф Флэт Уайт</p>
-            <p class="catalog__item-subtitle">Кофе без кофеина из Эфиопии
-              <br>с натуральным фермерским молоком</p>
-            <div class="catalog__item-wrapper">
-              <p class="catalog__item-price">225₽</p>
-              <button class="catalog__item-cta button-main" type="button">
-                <svg width="20" height="16">
-                  <use href="images/icons/stack.svg#addToCart"/>
-                </svg>
-                В корзину
-              </button>
-            </div>
-          </li>
-        </ul>
 
         <ul class="catalog__navigation">
           <li class="catalog__navigation-item">
@@ -439,10 +466,6 @@
     </main>
     <footer class="footer" data-test="footer">
       <div class="footer__socials">
-        <!-- <svg class="footer__logo" width="82" height="36">
-          <use class="footer__logo-medium" href="images/icons/stack.svg#logo-tablet"/>
-          <use class="footer__logo-big" href="images/icons/stack.svg#logo-desktop"/>
-        </svg> -->
         <a class="footer__logo" href="/">
           <svg class="footer__logo-icon" width="82" height="36">
             <use class="footer__logo-medium" href="images/icons/stack.svg#logo-tablet"/>
@@ -498,15 +521,9 @@
       <div class="footer__contacts underscore">
         <p class="footer__title">Контакты</p>
         <div class="footer__address-wrapper">
-          <svg width="25" height="17">
-            <use href="images/icons/stack.svg#address"/>
-          </svg>
           <address class="footer__address-text">Санкт-Петербург, набережная реки Карповки, дом 5</address>
         </div>
         <div class="footer__phone">
-          <svg width="13" height="16">
-            <use href="images/icons/stack.svg#cell"/>
-          </svg>
           <a class="footer__phone-text" href="tel:+79999999999">+7 (999) 999-99-99</a>
         </div>
       </div>
@@ -517,7 +534,7 @@
 
       </div>
     </footer>
-    <script src="js/nouislider.js" defer></script>
+    <script src="js/vendor/nouislider.js" defer></script>
     <script type="module" src="js/script.js" async></script>
   </body>
 </html>

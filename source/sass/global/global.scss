@@ -1,4 +1,3 @@
-/* здесь используйте глобальные селекторы img, body, html и так далее*/
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -33,7 +32,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  // outline: 1px dotted purple;
 }
 
 html {
@@ -55,6 +53,10 @@ body {
   height: auto;
 
   min-height: 100%;
+
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  justify-content: center;
 }
 
 img {
@@ -62,7 +64,6 @@ img {
   height: auto;
   object-fit: contain;
 }
-
 
 .underscore {
   position: relative;
@@ -80,4 +81,17 @@ img {
 
 .wrapped {
   text-wrap: balance;
+}
+
+
+@media (min-width: 769px) {
+  body {
+    justify-items: center;
+  }
+}
+
+@media (min-width: 1439px) {
+  body {
+    justify-items: normal;
+  }
 }
