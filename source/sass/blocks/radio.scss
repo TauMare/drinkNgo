@@ -64,10 +64,12 @@
   cursor: pointer;
 }
 
-.radio-input:focus ~ .radio-mark, .radio-input:hover ~ .radio-mark{
+.radio-input:focus ~ .radio-mark,
+.radio-input:hover ~ .radio-mark {
   border-color: $primaryLighter;
+
   &::after {
-    content: '';
+    content: "";
     width: 16px;
     height: 16px;
 
@@ -84,8 +86,9 @@
 
 .radio-input:checked ~ .radio-mark {
   border-color: $basePrimary;
+
   &::after {
-    content: '';
+    content: "";
     width: 16px;
     height: 16px;
 

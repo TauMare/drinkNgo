@@ -21,11 +21,13 @@
 :root {
   --width: 320px;
 }
+
 @media (min-width: 768px) {
   :root {
     --width: 768px;
   }
 }
+
 @media (min-width: 1440px) {
   :root {
     --width: 1440px;
@@ -50,13 +52,14 @@ body {
 
   margin: 0;
 
-  font-family: 'Montserrat';
+  font-family: $fontMain;
   font-size: 12px;
   color: $baseBlack;
   font-style: normal;
   font-weight: 400;
 
-  height: auto; 
+  height: auto;
+
   min-height: 100%;
 }
 
@@ -68,10 +71,10 @@ img {
 
 
 .underscore {
-  // border-top: 1px solid $baseSecondary;
   position: relative;
+
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -20px;
     left: -20px;

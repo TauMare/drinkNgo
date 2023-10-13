@@ -6,7 +6,7 @@
 
 .checkbox-name {
   font-size: 16px;
-  line-height: 24px
+  line-height: 24px;
 }
 
 .checkbox-mark {
@@ -19,8 +19,9 @@
   border-radius: 12px;
   background-color: $baseGrey;
   border: 2px solid $baseGrey;
+
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: calc(50% - 10px);
     left: 3%;
@@ -31,11 +32,12 @@
     background-color: $baseWhite;
     border-radius: 50%;
 
-    animation: turnLeft 0.2s ease-in; 
+    animation: turnLeft 0.2s ease-in;
   }
 }
 
-.checkbox-input:focus ~ .checkbox-mark, .checkbox-input:hover ~ .checkbox-mark {
+.checkbox-input:focus ~ .checkbox-mark,
+.checkbox-input:hover ~ .checkbox-mark {
   outline: none;
   border: 2px solid $basePrimary;
   background-color: #7859CF40;
@@ -44,9 +46,10 @@
 .checkbox-input:checked ~ .checkbox-mark {
   background-color: $basePrimary;
   border-color: $basePrimary;
+
   &::after {
     left: calc(97% - 20px);
-    animation: turnRight 0.2s ease-in; 
+    animation: turnRight 0.2s ease-in;
   }
 }
 
@@ -76,16 +79,18 @@
   0% {
     left: calc(50% - 20px);
   }
+
   100% {
     left: calc(97% - 20px);
   }
-};
+}
 
 @keyframes turnLeft {
   0% {
     left: calc(97% - 20px);
   }
+
   100% {
     left: 3%;
   }
-};
+}

@@ -88,7 +88,7 @@
   // padding: 8px;
   padding-block: 8px;
   // padding-left: 15px;
-  // padding: 8px 0px 8px 18px;
+  // padding: 8px0 8px 18px;
   // margin: 0 auto;
   &::placeholder {
     text-align: center;
@@ -406,7 +406,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 3fr auto auto;
     column-gap: 28px;
-    row-gap: 0px;
+    row-gap: 0;
 
     align-items: start;
     justify-items: center;
@@ -534,7 +534,7 @@
     padding-bottom: 40px;
 
     padding-top: 4px;
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   .catalog__form {    
@@ -572,7 +572,7 @@
     padding-top: 46px;
     padding-right: 29px;
     &:focus, &:hover {
-      box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15)
+      box-shadow: 0 5px 15px0 rgba(0, 0, 0, 0.15)
     }
   }
 
@@ -582,7 +582,7 @@
 
   .catalog__price-input {
     width: 134px;
-    padding-left: 0px;
+    padding-left: 0;
   }
 
   .catalog__buttons-wrapper {
